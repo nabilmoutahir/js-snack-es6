@@ -39,18 +39,28 @@ const teams = [
 
 
 
-// ciclo per valori random score e foul
-const randomValues = teams.map((team) => {
 
-    const randomScore = Math.floor(Math.random() * 50);
-
+// ciclo per array con oggetti con nome e foul
+const newTeams = teams.map((team) => {
+    // random value score
+    // const randomScore = Math.floor(Math.random() * 50);
+    // random value foul
     const randomFoul = Math.floor(Math.random() * 50);
 
-    return {'name': team.name,
-            'score': randomScore,
-            'foul': randomFoul
-            }
+    team.foul = randomFoul
 
+    // destructuring
+    const {name, foul} = team;
+
+    console.log(name, foul)
+
+    return {name, foul};
 })
 
-console.log(randomValues)
+// stampo array
+console.log(newTeams)
+
+
+
+
+
