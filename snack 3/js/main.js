@@ -1,49 +1,56 @@
 
 const bikes = [
     {
-        'name': 'red bike',
+        'bikeName': 'red bike',
         'weight': 45
     }, 
     {
-        'name': 'blue bike',
+        'bikeName': 'blue bike',
         'weight': 62
     }, 
     {
-        'name': 'green bike',
+        'bikeName': 'green bike',
         'weight': 123
     }, 
     {
-        'name': 'yellow bike',
+        'bikeName': 'yellow bike',
         'weight': 89
     }, 
     {
-        'name': 'black bike',
+        'bikeName': 'black bike',
         'weight': 90
     }, 
     {
-        'name': 'white bike',
+        'bikeName': 'white bike',
         'weight': 36
     }, 
     {
-        'name': 'grey bike',
+        'bikeName': 'grey bike',
         'weight': 76
     }, 
     {
-        'name': 'orange bike',
+        'bikeName': 'orange bike',
         'weight': 94
     }, 
     {
-        'name': 'violet bike',
+        'bikeName': 'violet bike',
         'weight': 54
     }, 
 ]
 
 console.log(bikes)
 
+
+// assegno una costante al valore minimo
 const min = Math.min(...bikes.map(bike => bike.weight))
 
-const minWeight = bikes.filter((bikeMin) => {
-    return bikeMin.weight === min 
+// filtro oggetti
+const minWeight = bikes.filter((bike) => {
+    return bike.weight === min 
 })
 
 console.log(minWeight)
+
+// destructuring
+const {bikeName, weight} = minWeight[0];
+console.log(bikeName, weight)
