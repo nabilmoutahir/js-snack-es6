@@ -22,10 +22,25 @@ const vips = [
   'Maneskin',
 ];
 La tipografia per stampare il tutto vuole che le mandiamo una lista di ospiti in un formato specifico, per cui dobbiamo fare in modo che ogni ospite sia un oggetto javascript che ha come attributi:
+
 nome del tavolo,
+
 nome dell'ospite,
+
 posto occupato.
+
 Generiamo e stampiamo in console l'array di oggetti per i segnaposto.
+
+### SVOLGIMENTO
+
+- modifico gli elemnti dell'array con la funzione Map
+
+- assegno il nome tavolo "Tavolo Vip"
+
+- assegno il nome ospite (elemento array)
+
+- assegno il posto (index array)
+
 
 ## SNACK 2
 Snack 2:
