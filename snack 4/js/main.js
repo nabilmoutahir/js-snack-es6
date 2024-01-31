@@ -38,3 +38,19 @@ const teams = [
 ];
 
 
+
+// ciclo per valori random score e foul
+const randomValues = teams.map((team) => {
+
+    const randomScore = Math.floor(Math.random() * 50);
+
+    const randomFoul = Math.floor(Math.random() * 50);
+
+    return {'name': team.name,
+            'score': randomScore,
+            'foul': randomFoul
+            }
+
+})
+
+console.log(randomValues)
