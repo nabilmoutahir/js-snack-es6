@@ -58,3 +58,10 @@ const studentsUpper = students.map((student) => {
 })
 
 console.log(studentsUpper)
+
+// array oggetti filtrato con voti > 70
+const gradesOver70 = students.filter((student) => {
+    return student.grades >= 70;
+})
+
+console.log(gradesOver70)
