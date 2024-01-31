@@ -51,3 +51,10 @@ const students = [
 ]
 
 console.log(students)
+
+// array stringhe maiuscole
+const studentsUpper = students.map((student) => {
+    return student.name.toUpperCase()
+})
+
+console.log(studentsUpper)
