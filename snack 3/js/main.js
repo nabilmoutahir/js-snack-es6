@@ -53,4 +53,8 @@ console.log(minWeight)
 
 // destructuring
 const {bikeName, weight} = minWeight[0];
-console.log(bikeName, weight)
+
+
+console.log(bikeName,weight)
+console.log(`la bici che pesa meno è ${bikeName} e pesa ${weight} kg`)
+
