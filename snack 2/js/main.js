@@ -65,3 +65,10 @@ const gradesOver70 = students.filter((student) => {
 })
 
 console.log(gradesOver70)
+
+// array oggetti filtrato con voti > 70 e id > 120
+const gradesId = students.filter((student) => {
+    return student.grades >= 70 && student.id >= 120
+})
+
+console.log(gradesId)
