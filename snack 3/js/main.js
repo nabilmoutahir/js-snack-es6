@@ -39,3 +39,11 @@ const bikes = [
 ]
 
 console.log(bikes)
+
+const min = Math.min(...bikes.map(bike => bike.weight))
+
+const minWeight = bikes.filter((bikeMin) => {
+    return bikeMin.weight === min 
+})
+
+console.log(minWeight)

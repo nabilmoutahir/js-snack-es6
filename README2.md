@@ -13,6 +13,8 @@ Stampare in console la bici con peso minore utilizzando destructuring e template
 ## SVOLGIMENTO
 - creo array oggetti con proprietà nome e peso
 
+- filtro i gli oggetti
+
 - stampo in console la bici con peso minore usando destructuring e template literal
 
 
