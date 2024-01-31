@@ -41,6 +41,8 @@ Generiamo e stampiamo in console l'array di oggetti per i segnaposto.
 
 - assegno il posto (index array)
 
+- stampo in console
+
 
 ## SNACK 2
 Snack 2:
